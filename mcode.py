@@ -7,7 +7,10 @@ data={"name":["Alice","Bob","Ravi"],
       "city":["Newyork","Delhi","Bangalore"]
       }
 
+dc={"name":"radhika","age":22,"city":"Mumbai"}
+
 df=pd.DataFrame(data)
+df.loc[len(df.index)]=dc
 
 data_dir='data'
 os.makedirs(data_dir,exist_ok=True)
